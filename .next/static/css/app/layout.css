@@ -943,9 +943,6 @@ video {
 .max-w-\[--skeleton-width\] {
   max-width: var(--skeleton-width);
 }
-.max-w-full {
-  max-width: 100%;
-}
 .max-w-lg {
   max-width: 32rem;
 }
