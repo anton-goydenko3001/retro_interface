@@ -37,7 +37,7 @@ export default function RetroInterface() {
       setShowTop(false);
       setShowBottom(false);
       setOpenDropdown(null);
-    }, 6000);
+    }, 50000);
   };
 
   useEffect(() => {
@@ -145,7 +145,7 @@ export default function RetroInterface() {
               damping: 20,
               duration: 1.2,
             }}
-            className="absolute top-4 sm:top-6 md:top-8 left-0 right-0 z-20"
+            className="absolute top-8 sm:top-6 md:top-8 left-0 right-0 z-30"
             onMouseEnter={resetTimer}
             onTouchStart={resetTimer}
           >
@@ -255,7 +255,7 @@ export default function RetroInterface() {
                 {Array.from({ length: 5 }).map((_, rowIndex) => (
                   <div
                     key={rowIndex}
-                    className="grid grid-cols-2 gap-2 mb-2 last:mb-0"
+                    className="grid grid-cols-1 gap-2 mb-2 last:mb-0"
                   >
                     {sections
                       .slice(rowIndex * 2, (rowIndex + 1) * 2)
@@ -325,8 +325,67 @@ export default function RetroInterface() {
                 </div>
               </div>
 
+              {/* НОВЫЙ БЛОК: СРЕДНИЕ ДЕСКТОПЫ/ПЛАНШЕТЫ - 3 колонки (видимость md:768px до xl:1280px) */}
+              <div className="hidden md:block xl:hidden">
+                {" "}
+                {/* <--- НОВЫЙ БЛОК */}
+                <div className="grid grid-cols-3 gap-3 mb-3">
+                  {" "}
+                  {/* Копируем структуру "ПЛАНШЕТЫ - 3 колонки" */}
+                  {sections.slice(0, 3).map((section) => (
+                    <PremiumSectionControl
+                      key={section.id}
+                      section={section}
+                      isLaunched={activeSectionId === section.id}
+                      onSwitch={switchSection}
+                      onLaunch={launchSection}
+                      size="medium" // Используем size="medium"
+                    />
+                  ))}
+                </div>
+                <div className="grid grid-cols-3 gap-3 mb-3">
+                  {sections.slice(3, 6).map((section) => (
+                    <PremiumSectionControl
+                      key={section.id}
+                      section={section}
+                      isLaunched={activeSectionId === section.id}
+                      onSwitch={switchSection}
+                      onLaunch={launchSection}
+                      size="medium"
+                    />
+                  ))}
+                </div>
+                <div className="grid grid-cols-3 gap-3 mb-3">
+                  {sections.slice(6, 9).map((section) => (
+                    <PremiumSectionControl
+                      key={section.id}
+                      section={section}
+                      isLaunched={activeSectionId === section.id}
+                      onSwitch={switchSection}
+                      onLaunch={launchSection}
+                      size="medium"
+                    />
+                  ))}
+                </div>
+                <div className="grid grid-cols-1 gap-3">
+                  {sections.slice(9, 10).map((section) => (
+                    <PremiumSectionControl
+                      key={section.id}
+                      section={section}
+                      isLaunched={activeSectionId === section.id}
+                      onSwitch={switchSection}
+                      onLaunch={launchSection}
+                      size="medium"
+                    />
+                  ))}
+                </div>
+              </div>
+
               {/* ДЕСКТОПЫ - 5 колонок */}
-              <div className="hidden md:block">
+              {/* ИЗМЕНИТЕ ЭТОТ БЛОК ТАК: */}
+              <div className="hidden xl:block">
+                {" "}
+                {/* <--- БЫЛО hidden md:block */}
                 <div className="grid grid-cols-5 gap-4 mb-4">
                   {sections.slice(0, 5).map((section) => (
                     <PremiumSectionControl

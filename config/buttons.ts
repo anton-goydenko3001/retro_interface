@@ -1,23 +1,59 @@
 // НАСТРОЙКА КНОПОК С ВЫПАДАЮЩИМИ МЕНЮ
 export const topButtonsMenu = [
   {
-    main: { name: "ВИДЕОСТОК", url: "https://youtube.com", desc: "Видео контент" },
+    main: {
+      name: "ВИДЕОСТОК",
+      url: "https://youtube.com",
+      desc: "Видео контент",
+    },
     submenu: [
-      { name: "ФАЙЛЫ/ФУТАЖИ", url: "https://dropbox.com", desc: "Файловое хранилище" },
-      { name: "СЕКВЕСОРЫ", url: "https://github.com", desc: "Управление последовательностями" },
-      { name: "ЭФФЕКТЫ", url: "https://after-effects.com", desc: "Визуальные эффекты" },
+      {
+        name: "ФАЙЛЫ/ФУТАЖИ",
+        url: "https://dropbox.com",
+        desc: "Файловое хранилище",
+      },
+      {
+        name: "СЕКВЕСОРЫ",
+        url: "https://github.com",
+        desc: "Управление последовательностями",
+      },
+      {
+        name: "ЭФФЕКТЫ",
+        url: "https://after-effects.com",
+        desc: "Визуальные эффекты",
+      },
     ],
   },
   {
-    main: { name: "БИРЖИ / РЫНКИ", url: "https://binance.com", desc: "Торговые площадки" },
+    main: {
+      name: "БИРЖИ / РЫНКИ",
+      url: "https://binance.com",
+      desc: "Торговые площадки",
+    },
     submenu: [
-      { name: "СЧЕТ/ДЕПОЗИТ", url: "https://paypal.com", desc: "Управление счетом" },
-      { name: "СЧЕТ / ESCROW", url: "https://escrow.com", desc: "Эскроу сервис" },
-      { name: "СЧЕТ / WALLET", url: "https://metamask.io", desc: "Криптовалютный кошелек" },
+      {
+        name: "СЧЕТ/ДЕПОЗИТ",
+        url: "https://paypal.com",
+        desc: "Управление счетом",
+      },
+      {
+        name: "СЧЕТ / ESCROW",
+        url: "https://escrow.com",
+        desc: "Эскроу сервис",
+      },
+      {
+        name: "СЧЕТ / WALLET",
+        url: "https://metamask.io",
+        desc: "Криптовалютный кошелек",
+      },
     ],
   },
   {
-    main: { name: "МАГАЗИН", url: "https://amazon.com", desc: "Интернет-магазин" },
+    main: {
+      name: "МАГАЗИН",
+      url: "https://amazon.com",
+      desc: "Интернет-магазин",
+    },
     submenu: [
       { name: "ТОВАРЫ", url: "https://ebay.com", desc: "Каталог товаров" },
       { name: "УСЛУГИ", url: "https://fiverr.com", desc: "Каталог услуг" },
@@ -27,44 +63,116 @@ export const topButtonsMenu = [
   {
     main: { name: "AI ADS", url: "https://openai.com", desc: "AI реклама" },
     submenu: [
-      { name: "SMM/MARKETING", url: "https://facebook.com", desc: "Социальный маркетинг" },
-      { name: "НАСТРОЙКИ", url: "https://settings.com", desc: "Настройки системы" },
-      { name: "РАСПРЕДЕЛИТЬ", url: "https://distribute.com", desc: "Система распределения" },
+      {
+        name: "SMM/MARKETING",
+        url: "https://facebook.com",
+        desc: "Социальный маркетинг",
+      },
+      {
+        name: "НАСТРОЙКИ",
+        url: "https://settings.com",
+        desc: "Настройки системы",
+      },
+      {
+        name: "РАСПРЕДЕЛИТЬ",
+        url: "https://distribute.com",
+        desc: "Система распределения",
+      },
     ],
   },
   {
-    main: { name: "AI АСИСТЕНТЫ", url: "https://chatgpt.com", desc: "AI помощники" },
+    main: {
+      name: "AI АСИСТЕНТЫ",
+      url: "https://chatgpt.com",
+      desc: "AI помощники",
+    },
     submenu: [
-      { name: "НВН АСИСТЕНТ", url: "https://notion.so", desc: "Персональный ассистент" },
-      { name: "КОММУНИКАТОР", url: "https://discord.com", desc: "Система связи" },
-      { name: "CRM / BITRIX", url: "https://bitrix24.com", desc: "CRM система" },
+      {
+        name: "Н8Н АСИСТЕНТ",
+        url: "https://notion.so",
+        desc: "Персональный ассистент",
+      },
+      {
+        name: "КОММУНИКАТОР",
+        url: "https://discord.com",
+        desc: "Система связи",
+      },
+      {
+        name: "CRM / BITRIX",
+        url: "https://bitrix24.com",
+        desc: "CRM система",
+      },
     ],
   },
   {
-    main: { name: "AI ГЕНЕРАТОРЫ", url: "https://midjourney.com", desc: "AI генерация" },
+    main: {
+      name: "AI ГЕНЕРАТОРЫ",
+      url: "https://midjourney.com",
+      desc: "AI генерация",
+    },
     submenu: [
-      { name: "ФОТОГЕНЕРИН", url: "https://dall-e.com", desc: "Генерация изображений" },
-      { name: "АУДИОГЕНЕРИН", url: "https://soundcloud.com", desc: "Генерация аудио" },
-      { name: "ВИДЕОГЕНЕРИН", url: "https://runway.ml", desc: "Генерация видео" },
+      {
+        name: "ФОТОГЕНЕРИН",
+        url: "https://dall-e.com",
+        desc: "Генерация изображений",
+      },
+      {
+        name: "АУДИОГЕНЕРИН",
+        url: "https://soundcloud.com",
+        desc: "Генерация аудио",
+      },
+      {
+        name: "ВИДЕОГЕНЕРИН",
+        url: "https://runway.ml",
+        desc: "Генерация видео",
+      },
     ],
   },
   {
-    main: { name: "ВИДЕОХОСТИНГ", url: "https://vimeo.com", desc: "Хостинг видео" },
+    main: {
+      name: "ВИДЕОХОСТИНГ",
+      url: "https://vimeo.com",
+      desc: "Хостинг видео",
+    },
     submenu: [
-      { name: "КАНАЛЫ - А", url: "https://telegram.org", desc: "Каналы категории А" },
-      { name: "КАНАЛЫ - Б", url: "https://whatsapp.com", desc: "Каналы категории Б" },
-      { name: "КАНАЛЫ - В", url: "https://slack.com", desc: "Каналы категории В" },
+      {
+        name: "КАНАЛЫ - А",
+        url: "https://telegram.org",
+        desc: "Каналы категории А",
+      },
+      {
+        name: "КАНАЛЫ - Б",
+        url: "https://whatsapp.com",
+        desc: "Каналы категории Б",
+      },
+      {
+        name: "КАНАЛЫ - В",
+        url: "https://slack.com",
+        desc: "Каналы категории В",
+      },
     ],
   },
   {
     main: { name: "НСПЧ", url: "https://google.com", desc: "НСПЧ система" },
     submenu: [
-      { name: "СЕРТИФИКАЦИЯ", url: "https://coursera.org", desc: "Сертификаты" },
-      { name: "ЦФА / ПАТЕНТ", url: "https://patents.google.com", desc: "Цифровые активы" },
-      { name: "ИСПОЛН. ЛИСТ", url: "https://docs.google.com", desc: "Исполнительные документы" },
+      {
+        name: "СЕРТИФИКАЦИЯ",
+        url: "https://coursera.org",
+        desc: "Сертификаты",
+      },
+      {
+        name: "ЦФА / ПАТЕНТ",
+        url: "https://patents.google.com",
+        desc: "Цифровые активы",
+      },
+      {
+        name: "ИСПОЛН. ЛИСТ",
+        url: "https://docs.google.com",
+        desc: "Исполнительные документы",
+      },
     ],
   },
-]
+];
 
 export const bottomSections = [
   {
@@ -84,7 +192,13 @@ export const bottomSections = [
   },
   {
     id: 4,
-    options: ["Настройка 1", "Настройка 2", "Настройка 3", "Настройка 4", "Настройка 5"],
+    options: [
+      "Настройка 1",
+      "Настройка 2",
+      "Настройка 3",
+      "Настройка 4",
+      "Настройка 5",
+    ],
     current: 0,
   },
   {
@@ -94,7 +208,13 @@ export const bottomSections = [
   },
   {
     id: 6,
-    options: ["Состояние 1", "Состояние 2", "Состояние 3", "Состояние 4", "Состояние 5"],
+    options: [
+      "Состояние 1",
+      "Состояние 2",
+      "Состояние 3",
+      "Состояние 4",
+      "Состояние 5",
+    ],
     current: 0,
   },
   {
@@ -117,4 +237,4 @@ export const bottomSections = [
     options: ["Канал 1", "Канал 2", "Канал 3", "Канал 4", "Канал 5"],
     current: 0,
   },
-]
+];
