@@ -9,7 +9,7 @@ export const topButtonsMenu = [
     submenu: [
       {
         name: "ФАЙЛЫ/ФУТАЖИ",
-        url: "https://dropbox.com",
+        url: "https://bp.un.tc",
         desc: "Файловое хранилище",
       },
       {
