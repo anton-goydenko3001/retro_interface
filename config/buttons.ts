@@ -89,7 +89,7 @@ export const topButtonsMenu = [
     submenu: [
       {
         name: "Н8Н АСИСТЕНТ",
-        url: "https://notion.so",
+        url: "https://n8n.un.tc",
         desc: "Персональный ассистент",
       },
       {
